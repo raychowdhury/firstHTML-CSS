@@ -33,7 +33,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
     position: -webkit-sticky; /* For Safari */
 }
 .navbar img {
@@ -42,10 +41,11 @@ body {
 }
 .nav-links {
     display: flex;
+    justify-content: flex-start;
     list-style: none;
 }
 .nav-links li {
-    margin-left: 20px;
+    padding: 10px;   
 }
 .nav-links a {
     color: white;
@@ -54,6 +54,7 @@ body {
 }
 .nav-links a:hover {
     text-decoration: underline;
+    color: white;
 }
 
 .background-div {
@@ -241,27 +242,29 @@ button:hover {
     background-color: #0056b3;
 }
 
-.shop-local-container {
+/* .shop-local-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border-radius: 10px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 20px auto;
 }
 .image-container {
     flex: 1.5;
     max-width: 50%;
     padding: 10px;
-    margin-right:20%;
-    background-color: white;
+    
+    
 }
 .image-container img {
     width: 100%;
     border-radius: 10px;
+    
 }
 .text-container {
     flex: 2;
@@ -275,6 +278,43 @@ button:hover {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
+} */
+
+.shop-local{
+    width: 1200; /* Adjust the width as needed */
+    height: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 85px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.shop-local-image{
+    width: 400px;
+    height: 350px; 
+    background-image: url('/src/box-img1.jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 9px;
+     -moz-border-radius: 9px;
+    
+}
+.shop-local-text{
+    /* width: 400px;
+    height: 400px;  */
+    background-color: #222;
+    border-radius: 15px;
+    padding: 7%;
+    line-height: 1.5;
+    font-size: 1.2em;
+
+}
+.shop-local-text p{
+    font-size: 16px;
+    /* line-height: 1.5px; */
 }
 
 .footer {
@@ -284,8 +324,8 @@ button:hover {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    
 }
+
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -304,7 +344,6 @@ button:hover {
     font-size: 1em;
     
 }
-.copy-bar{}
 .social-links {
     display: flex;
     justify-content: center;
